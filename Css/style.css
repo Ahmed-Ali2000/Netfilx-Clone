@@ -1,0 +1,704 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #e30813 !important;
+    border-radius: 5rem !important;
+}
+
+body{
+    background-color: rgb(0, 0, 0) !important;
+    color: #fff !important;
+}
+/* ======== Start Header ========  */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)),url(/images_page1/EG-en-20230123-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position:center ;
+    padding:30px ;
+    padding-left: 40px;
+}
+
+.left-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side img{
+    cursor: pointer;
+}
+
+.left-side button{
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #e30813;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 20px;
+    outline: none;
+    font-size:18px;
+    border: none;
+}
+
+.center-section{
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.center-section h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+.center-section h5{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.center-section h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.center-section .input_serch{
+    position: relative;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
+}
+
+.center-section .text{
+    width: 750px;
+    height: 64px;
+    padding: 5px 15px;
+    outline: none;
+    align-items: center;
+    border: none;
+    font-size: 15px ;
+    margin: auto;
+}
+
+.center-section .submit{
+    width: 250px;
+    height: 105%;
+    border: none;
+    background-color:#e30813;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0px;
+    
+}
+
+.center-section form .hoover :hover{
+    background-color: rgb(236, 0, 0);
+}
+
+
+
+/*  ======== End Header ======== */
+/* ======== Start Media Query ========  */
+
+@media (max-width: 991px) {
+    .center-section .submit{
+        width: 130px;
+        font-size: 20px;
+        transform: translateY(50%);
+        right:40% ;
+        border-radius: 5px;
+        height: 45px;
+        margin-top: 30px;
+    }
+
+    .center-section .text{
+        width: 550px;
+        height: 55px;
+        border-radius: 4px;
+    }
+
+    /* =========== */
+    .container .texsts{
+        text-align: center;
+        margin-top: 0px !important;
+    }
+
+    .container .texsts h3{
+        font-size: 20px;
+    }
+
+    /* =========== */
+    .container .tv {
+        align-items: center;
+    }
+
+    .hug-2{
+    display: block !important;
+}
+
+.hug-2 .titels{
+    text-align: center;
+    color: #737373;
+}
+
+.hug{
+    display: none;
+}
+}
+
+
+@media (max-width: 768px) {
+    .center-section{
+        margin-top: 130px;
+    }
+    
+    .center-section h1{
+        font-size: 60px;
+    }
+    
+    .center-section h5{
+        font-size: 17px;
+    }
+    
+    .center-section h3{
+        font-size: 25px;
+    }
+    
+    .center-section .text{
+        width: 450px;
+        height: 55px;
+    }
+
+    /* ============ */
+    .container .texsts{
+        text-align: center;
+        margin-top: 0px !important;
+    }
+
+    .container .tv {
+        align-items: center;
+    }
+    .container .tv img{
+        width: 480px;
+    }
+
+    .our-story-card-video{
+        width: 410px !important;
+    }
+/* =========== */
+.our-story-card-animation{
+    width: 300px;
+}
+
+.header .form{
+    width: 400px !important;
+}
+    
+}
+
+@media (max-width: 480px) {
+
+    .center-section{
+        margin-top: 50px;
+    }
+    
+    .center-section h1{
+        font-size: 60px;
+    }
+    
+    .center-section h5{
+        font-size: 17px;
+    }
+    
+    .center-section h3{
+        font-size: 20px;
+    }
+    
+    .center-section .text{
+        width: 350px;
+        height: 55px;
+    }
+
+    /* =================== */
+    .container .tv img{
+        width: 380px;
+        height: 300px;
+    }
+
+    .our-story-card-video{
+        width: 320px !important;
+    }
+
+    .mobile-photo .small-phota img{
+        border-radius: 2px;
+        margin-right: 10px;
+        width: 0px !important;
+    }
+
+    .mobile-photo .text h6{
+        color:#0071eb ;
+        margin-right: 50px;
+    }
+    .header .form{
+        width: 300px !important;
+    }
+
+
+
+    .header .form .butom-div{
+        display:none !important ;
+    }
+
+    .immg video{
+        width: 200px !important;
+        top: 40px;
+        left: 65px;
+    }
+        .immg img{
+        width: 300px !important;
+        height: 300px;
+    }
+
+    .input_serch input{
+        width: 300px !important;
+    }
+
+}
+/* ======== End Media Query  */
+/*  ======== Start Sacond section =========== */
+.container {
+    margin-top: 50px;
+}
+
+.container .texsts{
+    margin-top: 110px;
+}
+
+.container .texsts h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .tv{
+    position: relative;
+    align-items: center;
+    margin: auto;
+}
+
+.our-story-card-video {
+    width: 400px;
+    position: absolute;
+    top: 70px;
+    left: 72px;
+    z-index: -1;
+}
+
+.line-4 hr {
+        height: 7px;
+        background:#252525;
+        margin-top: 0;
+        border: none;
+    }
+
+.line-5 hr {
+        height: 7px;
+        background:#252525;
+        margin-top: 50px;
+        border: none;
+    }
+/* ======== End Sacond section =============== */
+/* ===========End  Therd section ===========  */
+
+.mobile-photo {
+    position: relative;
+}
+
+.our-story-card-animation {
+    align-items: center;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 50%;
+    padding: 0.25em 0.65em;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+.mobile-photo .small-phota img{
+    border-radius: 2px;
+    margin-right: 10px;
+    width: 40px !important;
+    height: 40px;
+}
+
+.mobile-photo .text h6{
+    color:#0071eb ;
+    margin-right: 100px;
+}
+
+.our-story-card-animation-custom {
+    background: url(/images_page1/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+}
+/* ===========End  Therd section =========== */
+/* ======== Start fourth section ============*/
+.our-story-card-video2{
+    width: 350px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: -1;
+    position: absolute;
+}
+/* ======== End fourth section ================= */
+/* ======== Start Six section ============*/
+
+
+
+
+
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color:#303030;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+.panel-default>.panel-heading a {
+    display: block;
+    padding: 25px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\2212";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: "\002b";
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.accordion-option {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 15px 0;
+    
+}
+
+.accordion-option .title {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.panel-body{
+    padding: 50px;
+    background-color: #303030;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 30px;
+}
+/* ======== End Six section ================= */
+/*  ======== Start Footer ======================*/
+
+.footer .flex{
+    display: flex;
+    color: #737373;
+    justify-content: space-around;
+}
+
+.footer .flex h6{
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.footer .flex a{
+    display: flex;
+    color: #737373;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer .top-text {
+    font-size: 17px;
+    margin-top: 40px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+
+.footer .top-text a{
+    color: #737373;
+}
+/*  ======== End Footer ======================  */
+
+/* ========== START SECOND PAGE =============== */
+
+/* ========== Start Form  ===================*/
+
+.back-2{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)),url(/images_page1/EG-en-20230123-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position:center ;
+    padding:30px ;
+    padding-left: 40px;
+    padding: auto;
+}
+
+.header .form {
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(0,0,0,.75);
+    width: 450px;
+    max-height: 660px;
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    margin-bottom: 90px;
+    min-height: 660px;
+}
+
+.header .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .form .two-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .form .two-items input {
+    background: #737373;
+    border: 0;
+    border-radius: 2px;
+    height: 16px;
+    left: -20px;
+    width: 16px;
+    margin-right: 10px;
+    border: 0;
+    outline: none;
+}
+
+.header .form .two-items a{
+    color: #737373;
+    font-size: 15px;
+}
+
+.header .form .two-items label {
+    color: #737373;
+}
+
+.header .form h1{
+    margin-bottom: 30px;
+}
+
+.header .form input{
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    outline: none;
+    background-color: #313131;
+    border: none;
+}
+
+.header .form  :focus {
+    background-color: #e8f0fe;
+}
+
+.header .form .singup :focus {
+    background-color: #e30813 !important;
+}
+
+.header .form .singup button{
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    background-color: #e30813;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.header .form .singup span{
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    background-color: #e30813;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.header .form .butom-div{
+    display: flex;
+    margin-top: 70px;
+    justify-content: start;
+}
+
+.header .form .butom-div a{
+    color: #fff;
+}
+
+.header .form .butom-div h6{
+    color: #737373;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.header .form  p{
+    color: #737373;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.credit{
+    color: #737373;
+}
+.footer-2{
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+}
+/*  ==========  End Form  =================== */
+/* ============ START MOVIES PAGE ============ */
+.uu {
+    font-size: 16px;
+    margin-top: 12px;
+    color: #a3a3a3bd;
+}
+
+.friday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hug {
+    background: #000000;
+}
+
+.qwer {
+    margin: 9px;
+}
+
+.checked {
+    margin-top: -7px;
+    color: orange;
+}
+
+
+.nbnb {
+    border-radius: 14px;
+}
+
+.friday .qwer {
+    overflow: hidden;
+}
+
+.friday .qwer img {
+    transition: .7s;
+}
+
+.friday .qwer:hover img {
+    transform: scale(1.1);
+}
+
+.hug .titels h1{
+    color: #a8a8a8;
+}
+
+.hug .titels {
+    padding: 40px;
+}
+
+
+.hug-2{
+    display: none;
+}
+
+.header .form textarea{
+    background-color: #333;
+    outline: none;
+    height: 100px;
+    border: 0;
+}
+
+
+/* ============ END MOVIES PAGE ============ */
